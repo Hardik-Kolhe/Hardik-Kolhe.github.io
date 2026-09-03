@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Phone } from 'lucide-react'
+import { Download, Mail, Phone } from 'lucide-react'
 import { FadeIn } from '../components/FadeIn'
 import { InstagramIcon, LinkedInIcon } from '../components/icons/SocialIcons'
 import { profile } from '../data/portfolio'
@@ -68,6 +68,16 @@ export default function Contact() {
               </p>
 
               <ul className="mt-6 flex flex-wrap items-center gap-2 sm:mt-8 sm:gap-3">
+                <li>
+                  <a
+                    href={profile.resume}
+                    download={profile.resumeFileName}
+                    className="inline-flex min-h-11 items-center gap-2 rounded-full border border-brand/40 bg-brand-dim px-3.5 text-sm font-medium text-brand-soft transition hover:border-brand hover:bg-brand/15 hover:text-ink sm:gap-3 sm:px-4"
+                  >
+                    <Download size={18} className="shrink-0" />
+                    Download Resume
+                  </a>
+                </li>
                 <li>
                   <a
                     href={`mailto:${profile.email}`}

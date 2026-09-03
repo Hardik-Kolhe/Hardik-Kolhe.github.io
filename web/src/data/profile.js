@@ -15,6 +15,8 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/hardik-kolhe/',
   github: 'https://github.com/Hardik-Kolhe',
   instagram: 'https://www.instagram.com/hardik_0609',
+  resume: withBase('assets/documents/Hardik_Kolhe_Resume.pdf'),
+  resumeFileName: 'Hardik_Kolhe_Resume.pdf',
   photo: withBase('assets/images/photo.jpg?v=2'),
   about: [
     'AI is most valuable when it solves a problem that actually matters.',

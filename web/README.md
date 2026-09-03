@@ -56,7 +56,7 @@ web/
 
 ## Configuration TODOs
 
-- Add resume PDFs to `public/assets/documents/` and wire download when ready
+- Add your resume PDF as `public/assets/documents/Hardik_Kolhe_Resume.pdf`
 - Update GitHub URL in `src/data/profile.js`
 
 ## Case-study pages
