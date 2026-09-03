@@ -1,0 +1,6 @@
+export { profile } from './profile.js'
+export { navLinks } from './nav.js'
+export { interests } from './interests.js'
+export { experience, education } from './experience.js'
+export { skillCategories } from './skills.js'
+export { projects } from './projects.js'

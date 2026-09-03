@@ -1,0 +1,133 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Text', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #07326A;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #ffffff;
+}
+
+body.dark-theme p, 
+body.dark-theme span, 
+body.dark-theme a {
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme .cta-button {
+    background-color: #0A61C9;
+    color: #ffffff;
+}
+
+body.dark-theme .cta-button:hover {
+    background-color: #064089;
+}
+
+body.dark-theme .interest-card, 
+body.dark-theme .experience-card, 
+body.dark-theme .education-card, 
+body.dark-theme .skill-category, 
+body.dark-theme .project-card, 
+body.dark-theme .contact-info-box, 
+body.dark-theme .contact-form-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .project-details {
+    background-color: rgba(7, 50, 106, 0.9);
+}
+
+body.dark-theme footer {
+    background-color: #1e1e1e;
+}
+
+/* Header Section */
+header {
+    background-color: #064089;
+    color: #F1F7F9;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav .navbar-brand { 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li { 
+    margin-left: 30px; 
+}
+
+header nav ul li a {
+    color: #F1F7F9;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover { 
+    color: #749DC8; 
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #F1F7F9;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #749DC8;
+}
+
+/* Rest of your CSS remains the same */
