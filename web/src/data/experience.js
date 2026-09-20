@@ -49,7 +49,7 @@ export const experience = [
   },
   {
     company: 'Olympic Broadcasting Services',
-    location: 'Paris, Île-de-France, France',
+    location: 'Paris, France',
     duration: 'July 2024 – September 2024',
     logo: withBase('assets/logo/obs.jpeg'),
     roles: [
@@ -57,10 +57,9 @@ export const experience = [
         title: 'Venue Game Services Assistant',
         date: 'July 2024 – September 2024',
         highlights: [
-          'Coordinated **real-time logistics and operational support** for **100+ broadcast professionals** during the Paris 2024 Olympic Games, ensuring seamless venue operations and uninterrupted event delivery.',
-          'Developed advanced **Microsoft Excel** tracking systems, data validation processes, and inventory management tools to improve reporting accuracy and operational efficiency.',
-          'Created **real-time dashboards** to monitor resource allocation, enabling rapid identification and resolution of operational bottlenecks during live events.',
-          'Collaborated with broadcast engineers, logistics teams, and venue stakeholders to ensure technical requirements and operational workflows complied with Olympic standards and event protocols.',
+          'Coordinated **real-time logistics and operational support** for **100+ broadcast professionals** during the Paris 2024 Olympic Games.',
+          'Developed **Excel-based tracking**, data validation, and inventory management systems to improve operational reporting and accuracy.',
+          'Created **real-time dashboards** for resource allocation and collaborated with technical and logistics teams to resolve operational bottlenecks.',
         ],
         focus: 'Operations · Data Tracking · Dashboards · Communication · Excel',
       },
