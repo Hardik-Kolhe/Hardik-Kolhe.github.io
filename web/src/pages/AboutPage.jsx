@@ -12,36 +12,26 @@ export default function AboutPage() {
             <h1 className="heading-xl">About Me</h1>
           </FadeIn>
 
-          <div className="mt-8 grid items-start gap-3 sm:mt-10 sm:gap-4 md:grid-cols-[auto_1fr] md:gap-8 lg:mt-12 lg:gap-10">
-            <FadeIn delay={0.05}>
-              <aside className="mx-auto flex w-[200px] flex-col items-center text-center sm:w-[220px] md:mx-0 md:items-start md:text-left lg:w-[240px]">
-                <img
-                  src={profile.photo}
-                  alt={profile.name}
-                  width={240}
-                  height={240}
-                  loading="eager"
-                  decoding="async"
-                  className="aspect-square h-40 w-40 rounded-full object-cover object-center ring-1 ring-line sm:h-48 sm:w-48 md:h-[200px] md:w-[200px] lg:h-[220px] lg:w-[220px]"
-                />
-
-                <div className="mt-8 w-[92%] self-center rounded-2xl border border-line bg-surface p-4 text-center shadow-lg shadow-shadow/40 sm:mt-10 sm:p-5 md:self-start md:text-left">
-                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-soft sm:text-xs">
-                    {profile.beyondCode.title}
-                  </p>
-                  <p className="mt-2 text-sm font-medium text-ink-soft sm:text-base">
-                    Travel · Learn · Explore
-                  </p>
-                  <div className="mt-3 space-y-1 text-sm leading-relaxed text-muted">
-                    {profile.beyondCode.lines.map((line) => (
-                      <p key={line}>{line}</p>
-                    ))}
-                  </div>
-                </div>
-              </aside>
+          <div className="mt-8 grid items-start gap-6 sm:mt-10 sm:gap-8 md:grid-cols-[auto_1fr] md:gap-8 lg:mt-12 lg:gap-10">
+            <FadeIn
+              delay={0.05}
+              className="order-1 mx-auto w-[200px] sm:w-[220px] md:mx-0 md:w-[240px]"
+            >
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                width={240}
+                height={240}
+                loading="eager"
+                decoding="async"
+                className="aspect-square h-40 w-40 rounded-full object-cover object-center ring-1 ring-line sm:h-48 sm:w-48 md:h-[200px] md:w-[200px] lg:h-[220px] lg:w-[220px]"
+              />
             </FadeIn>
 
-            <FadeIn delay={0.1}>
+            <FadeIn
+              delay={0.1}
+              className="order-2 md:col-start-2 md:row-span-2 md:row-start-1"
+            >
               <div className="body-text space-y-3 text-justify hyphens-auto sm:space-y-4">
                 {profile.about.map((paragraph, index) => (
                   <p
@@ -55,6 +45,25 @@ export default function AboutPage() {
                     {paragraph}
                   </p>
                 ))}
+              </div>
+            </FadeIn>
+
+            <FadeIn
+              delay={0.05}
+              className="order-3 mx-auto w-[200px] sm:w-[220px] md:mx-0 md:w-[240px]"
+            >
+              <div className="w-full rounded-2xl border border-line bg-surface p-4 text-center shadow-lg shadow-shadow/40 sm:p-5 md:text-left">
+                <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-soft sm:text-xs">
+                  {profile.beyondCode.title}
+                </p>
+                <p className="mt-2 text-sm font-medium text-ink-soft sm:text-base">
+                  Travel · Learn · Explore
+                </p>
+                <div className="mt-3 space-y-1 text-sm leading-relaxed text-muted">
+                  {profile.beyondCode.lines.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                </div>
               </div>
             </FadeIn>
           </div>
