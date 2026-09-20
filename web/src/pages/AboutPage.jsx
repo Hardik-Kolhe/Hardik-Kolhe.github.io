@@ -50,7 +50,7 @@ export default function AboutPage() {
 
             <FadeIn
               delay={0.05}
-              className="order-3 mx-auto w-[200px] sm:w-[220px] md:mx-0 md:w-[240px]"
+              className="order-3 w-full md:mx-0 md:w-[240px]"
             >
               <div className="w-full rounded-2xl border border-line bg-surface p-4 text-center shadow-lg shadow-shadow/40 sm:p-5 md:text-left">
                 <p className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-brand-soft sm:text-xs">
